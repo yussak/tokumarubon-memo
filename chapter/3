@@ -21,3 +21,11 @@ text/html => HTML文書
 application/xml => XML文書
 text/css => CSS
 image/jpeg => JPEG画像
+
+HTMLのform要素で指定できる。指定がなければ「application/x-www-form-urlencoded」になる
+これは名前＝値の組を＆で繋いだデータ形式
+
+なのでサンプルフォームでPOSTしたらメッセージボディが以下のようになってるのか（簡略化して書いてる
+name=%E5%BE%..&mail=toku%40example.jp%gender=%E7%94%B7
+
+Content-type: ボディのバイト数
