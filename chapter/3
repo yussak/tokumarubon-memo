@@ -12,3 +12,12 @@
 3xx => リダイレクト
 4xx => クライエントエラー
 5xx => サーバーエラー
+
+Content-type: MIMEタイプというリソースの種類を指定
+
+主なMIMEタイプとその意味
+text/plain => テキスト
+text/html => HTML文書
+application/xml => XML文書
+text/css => CSS
+image/jpeg => JPEG画像
