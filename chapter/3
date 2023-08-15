@@ -27,5 +27,13 @@ HTMLのform要素で指定できる。指定がなければ「application/x-www-
 
 なのでサンプルフォームでPOSTしたらメッセージボディが以下のようになってるのか（簡略化して書いてる
 name=%E5%BE%..&mail=toku%40example.jp%gender=%E7%94%B7
+これは「パーセントエンコードされてる」と表現する
 
 Content-type: ボディのバイト数
+
+パーセントエンコーディングは特別な意味を持つ記号や日本語などをURL上に記述するときに使用する
+対象の文字をバイト単位で%xxという形式で表す。
+
+パーセントエンコーディングの規約では、スペースは%20で表すが。application/x-www-form-urlencodedの場合は＋に変換する
+例
+I'm a programmer => I%27m+a+programmer
