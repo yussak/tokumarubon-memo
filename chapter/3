@@ -37,3 +37,8 @@ Content-type: ボディのバイト数
 パーセントエンコーディングの規約では、スペースは%20で表すが。application/x-www-form-urlencodedの場合は＋に変換する
 例
 I'm a programmer => I%27m+a+programmer
+
+Referer
+リンク元のURLを示すヘッダ
+これによって表示切り替えなど実装してセキュリティ強化になることもあるが、OWASP ZAPのようなツールで改変できてしまう
+→必ずしもリンク元を正しく示してるとは限らない！！！
